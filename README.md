@@ -12,7 +12,9 @@ while neverending==True:
             break
         else:
             x= 1+x
-    if singletest(constant, x)==True:
+    if constant<=1:
+        print(constant, "is not a prime number.")
+    elif singletest(constant, x)==True:
         print(constant, "is not a prime number.")
     else:
         print(constant, "is a prime number.")
@@ -24,4 +26,3 @@ while neverending==True:
         elif yesno=="no":
             neverending=False
             break
-
